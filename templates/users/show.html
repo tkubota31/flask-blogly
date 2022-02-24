@@ -36,7 +36,7 @@
       {% for post in user.posts %}
       <li>
         <a href="/posts/{{ post.id}}">{{ post.title }}</a>
-        <small>{{ post.friendly_date }}</small>
+        <small>{{ post.create_at }}</small>
       </li>
       {% endfor %}
     </ul>
